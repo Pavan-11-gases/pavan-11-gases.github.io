@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pavantej Gases Private Limited</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #003366, #145a32);
+    padding: 15px 0;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.logo-section img {
+    width: 80px;
+}
+
+/* NAV */
+nav {
+    background: #021f33;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #00ffcc;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1581093588401-22c66e7b93bb');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.products {
+    background: #f4f9f9;
+}
+
+.booking {
+    background: #e6f2ff;
+}
+
+.contact {
+    background: #003366;
+    color: white;
+}
+
+/* FORM */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #145a32;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #003366;
+}
+
+/* FOOTER */
+footer {
+    background: #00101a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* FLOATING BUTTONS */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.call {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #003366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo-section">
+        <img src="logo.png" alt="Logo">
+        <div>
+            <h2>PAVANTEJ GASES</h2>
+            <small>PRIVATE LIMITED</small>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#booking">Book</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+    <h1>Oxygen & Nitrogen Gas Manufacturers</h1>
+    <p>High Purity | Safe Delivery | Reliable Service</p>
+</div>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        Pavantej Gases Private Limited supplies high-quality Oxygen
+        and Nitrogen gases for industrial and medical applications.
+        We ensure safety, purity and timely supply.
+    </p>
+</section>
+
+<section id="products" class="products">
+    <h2>Our Products</h2>
+    <h3>✔ Oxygen Gas (Industrial & Medical)</h3>
+    <h3>✔ Nitrogen Gas</h3>
+</section>
+
+<section id="booking" class="booking">
+    <h2>Book Your Requirement</h2>
+    <form action="mailto:NPTGT2023@gmail.com" method="post" enctype="text/plain">
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <select>
+            <option>Oxygen Gas</option>
+            <option>Nitrogen Gas</option>
+        </select>
+        <textarea placeholder="Enter Quantity & Requirement"></textarea>
+        <button type="submit">Send Enquiry</button>
+    </form>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Details</h2>
+    <p><strong>Phone:</strong> 8919788945, 8790040498</p>
+    <p><strong>Email:</strong> NPTGT2023@gmail.com</p>
+    <p>
+        Plot No's. 20,21,22, SY.No.7/B (part)<br>
+        Brahmanapalli (V), Orvakal (M)<br>
+        Kurnool Dist, A.P - 518010
+    </p>
+
+    <h3>Location Map</h3>
+    <iframe 
+        src="https://www.google.com/maps?q=Orvakal,Kurnool,Andhra Pradesh&output=embed"
+        width="90%" height="250" style="border:0;" allowfullscreen="">
+    </iframe>
+</section>
+
+<footer>
+    © 2026 Pavantej Gases Private Limited. All Rights Reserved.
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/918919788945" class="whatsapp">💬</a>
+<a href="tel:8919788945" class="call">📞</a>
+
+</body>
+</html>
