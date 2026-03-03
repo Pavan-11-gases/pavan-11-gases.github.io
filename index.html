@@ -111,22 +111,66 @@ button {
 button:hover {
     background: #003366;
 }
-    <section id="booking" class="booking">
-    <h2>Book Your Requirement</h2>
-    <p>Click below to book Oxygen or Nitrogen instantly via WhatsApp.</p>
+  <section id="booking" style="padding:70px 20px; background:#f4f9f9; text-align:center;">
+    <h2 style="font-size:28px; margin-bottom:10px;">Instant WhatsApp Booking</h2>
+    <p style="margin-bottom:30px;">Select product and send booking directly on WhatsApp</p>
 
-    <a href="https://wa.me/918919788945?text=Hello%20Pavantej%20Gases,%20I%20want%20to%20book%20gas."
-       target="_blank"
-       style="display:inline-block;
-       padding:15px 30px;
-       background:#25D366;
-       color:white;
-       font-size:18px;
-       text-decoration:none;
-       border-radius:8px;">
-       📲 Book on WhatsApp
-    </a>
+    <div style="max-width:500px; margin:auto;">
+        <select id="product" style="width:100%; padding:12px; margin:10px 0; border-radius:6px;">
+            <option value="Oxygen Gas">Oxygen Gas</option>
+            <option value="Nitrogen Gas">Nitrogen Gas</option>
+        </select>
+
+        <input type="text" id="quantity" placeholder="Enter Quantity Required"
+        style="width:100%; padding:12px; margin:10px 0; border-radius:6px; border:1px solid #ccc;">
+
+        <button onclick="sendWhatsApp()"
+        style="width:100%; padding:15px; background:#25D366; color:white;
+        font-size:18px; border:none; border-radius:8px; cursor:pointer;
+        animation:pulse 1.5s infinite;">
+        📲 Send Booking via WhatsApp
+        </button>
+    </div>
 </section>
+
+<script>
+function sendWhatsApp() {
+    var product = document.getElementById("product").value;
+    var quantity = document.getElementById("quantity").value;
+
+    var message = "Hello Pavantej Gases,%0A" +
+                  "I want to book: " + product + "%0A" +
+                  "Quantity: " + quantity;
+
+    var phone1 = "918919788945";
+    var phone2 = "918790040498";
+
+    window.open("https://wa.me/" + phone1 + "?text=" + message, "_blank");
+}
+</script>
+    <a href="https://wa.me/918919788945"
+style="position:fixed; bottom:20px; right:20px;
+background:#25D366; color:white;
+padding:15px; border-radius:50%;
+font-size:22px; text-decoration:none;">
+💬
+</a>
+
+<a href="https://wa.me/918790040498"
+style="position:fixed; bottom:80px; right:20px;
+background:#128C7E; color:white;
+padding:15px; border-radius:50%;
+font-size:22px; text-decoration:none;">
+📞
+</a>
+
+<style>
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+</style>
     <a href="https://wa.me/918919788945?text=Hello%20Pavantej%20Gases"
    style="position:fixed;
    bottom:20px;
